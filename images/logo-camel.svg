@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 232 120">
+  <g stroke="#0B1B3F" stroke-width="11" fill="none" stroke-linejoin="miter">
+    <!-- Z: unchanged monoline, twin of the N -->
+    <path d="M8,32 H52 L8,80 H52"/>
+    <!-- o o: small, x-height, sitting on the baseline -->
+    <circle cx="89" cy="66" r="14"/>
+    <circle cx="138" cy="66" r="14"/>
+    <!-- N: totally unchanged -->
+    <path d="M170,84 V28 L210,84 V28"/>
+  </g>
+  <!-- pulse through the Z -->
+  <polyline points="0,56 18,56 23,43 30,69 35,56 58,56" fill="none" stroke="#16C784" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="8" y="106" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" letter-spacing="5.2" fill="#3D4A66">TECHNOLOGIES</text>
+</svg>

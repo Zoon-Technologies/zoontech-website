@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TW8FJZD3N"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2TW8FJZD3N');
+  </script>
+
+  <!-- Schema code/markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Zoon Technologies",
+    "url": "https://zoontech.net",
+    "logo": "https://zoontech.net/images/logo-camel.svg",
+    "image": "https://zoontech.net/images/mark-avatar.png",
+    "description": "Zoon Technologies builds professional websites, custom software, AI automation and provides engineering consulting and project management for businesses.",
+    "telephone": "+2349012670989",
+    "email": "hello@zoontech.net",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Warri",
+      "addressRegion": "Delta State",
+      "addressCountry": "NG"
+    },
+    "areaServed": ["Warri", "Effurun", "Asaba", "Delta State", "Nigeria", "Worldwide"],
+    "makesOffer": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Website Design & Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Software Development"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "AI Automation & Assistants"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Digital Marketing & Ads"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Engineering Consulting & Project Management"}}
+    ]
+  }
+  </script>
+
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Zoon Technologies — Engineering the Future</title>
+<link rel="icon" type="image/png" href="images/favicon-64.png"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Syne:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --void: #050810;
+  --deep: #080d1a;
+  --surface: #0d1526;
+  --panel: #111d35;
+  --border: #1e2f50;
+  --accent: #0ea5e9;
+  --accent2: #38bdf8;
+  --gold: #c8a96e;
+  --gold2: #e8cc94;
+  --text: #e8edf5;
+  --muted: #7a8aaa;
+  --dim: #3a4a6a;
+  --white: #ffffff;
+  --gradient: linear-gradient(135deg, #0ea5e9 0%, #c8a96e 100%);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--void);
+  color: var(--text);
+  overflow-x: hidden;
+  cursor: none;
+}
+
+/* ── CUSTOM CURSOR ── */
+.cursor {
+  position: fixed;
+  width: 10px; height: 10px;
+  background: var(--accent);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease;
+  mix-blend-mode: screen;
+}
+
+.cursor-ring {
+  position: fixed;
+  width: 36px; height: 36px;
+  border: 1px solid rgba(14,165,233,0.4);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: all 0.18s ease;
+}
+
+/* ── NAV ── */
+nav {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 100;
+  padding: 1.4rem 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(5,8,16,0.7);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(30,47,80,0.5);
+  transition: all 0.3s ease;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.55em;
+  text-decoration: none;
+}
+
+.nav-logo img {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+
+/* logo image swap: white mark in dark mode, navy mark in light mode */
+.nav-logo .logo-light-img { display: none; }
+.light-mode .logo-dark-img { display: none; }
+.light-mode .logo-light-img { display: block; }
+
+.nav-logo-text {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--white);
+  letter-spacing: -0.02em;
+}
+
+.nav-logo-dot {
+  width: 7px; height: 7px;
+  background: var(--accent);
+  border-radius: 50%;
+  margin-left: 2px;
+  margin-bottom: 2px;
+  display: inline-block;
+  animation: pulse 2s ease infinite;
+}
+
+@keyframes pulse {
+  0%,100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.7); }
+}
+
+.nav-links {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.nav-links a {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover { color: var(--accent); }
+
+.nav-cta {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--void);
+  background: var(--accent);
+  padding: 0.55em 1.4em;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.nav-cta:hover { background: var(--gold); transform: translateY(-1px); }
+
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  nav { padding: 1rem 4vw; }
+  .nav-logo img { height: 34px; }
+  .nav-logo-dot { display: none; }
+  .nav-cta { font-size: 0.7rem; padding: 0.5em 1em; white-space: nowrap; }
+  .toggle-switch { margin-left: 0.6rem; }
+}
+
+/* ── HERO ── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10rem 6vw 6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 60% 40%, rgba(14,165,233,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(200,169,110,0.06) 0%, transparent 50%),
+    var(--void);
+}
+
+.hero-grid {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(30,47,80,0.3) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,47,80,0.3) 1px, transparent 1px);
+  background-size: 60px 60px;
+  mask-image: radial-gradient(ellipse 80% 80% at 50% 50%, black 0%, transparent 100%);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+}
+
+.hero-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.8rem;
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero-eyebrow-line {
+  width: 40px;
+  height: 1px;
+  background: var(--accent);
+}
+
+.hero-eyebrow span {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.hero h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(3.2rem, 8vw, 7.5rem);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: -0.02em;
+  animation: fadeUp 0.8s ease 0.1s both;
+}
+
+.hero h1 .line2 {
+  display: block;
+  font-style: italic;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-sub {
+  margin-top: 2rem;
+  font-size: 1.05rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 540px;
+  line-height: 1.8;
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+.hero-actions {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  animation: fadeUp 0.8s ease 0.3s both;
+}
+
+.btn-primary {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--void);
+  background: var(--accent);
+  padding: 0.9em 2.2em;
+  border-radius: 2px;
+  text-decoration: none;
+  transition: all 0.2s;
+  border: none;
+  cursor: none;
+  display: inline-block;
+}
+
+.btn-primary:hover { background: var(--gold); transform: translateY(-2px); }
+
+.btn-outline {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: transparent;
+  padding: 0.9em 2.2em;
+  border-radius: 2px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  transition: all 0.2s;
+  display: inline-block;
+  cursor: none;
+}
+
+.btn-outline:hover { border-color: var(--accent); color: var(--accent); }
+
+.hero-stats {
+  position: absolute;
+  right: 6vw;
+  bottom: 8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  z-index: 2;
+  animation: fadeUp 0.8s ease 0.5s both;
+}
+
+@media (max-width: 900px) { .hero-stats { display: none; } }
+
+.stat-item { text-align: right; }
+
+.stat-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.stat-label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 6vw;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  z-index: 2;
+  animation: fadeUp 1s ease 0.7s both;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 50px;
+  background: linear-gradient(to bottom, var(--accent), transparent);
+  animation: scrollAnim 1.5s ease infinite;
+}
+
+@keyframes scrollAnim {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  51% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+.scroll-text {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.6rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--dim);
+  writing-mode: vertical-rl;
+}
+
+/* ── SECTIONS SHARED ── */
+.section {
+  padding: 7rem 6vw;
+  position: relative;
+}
+
+.section-header {
+  margin-bottom: 4rem;
+}
+
+.section-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.section-eyebrow-line {
+  width: 30px; height: 1px;
+  background: var(--gold);
+}
+
+.section-eyebrow span {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.section h2 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2.4rem, 5vw, 4.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+.section h2 em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.section-desc {
+  margin-top: 1.2rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  max-width: 560px;
+  line-height: 1.8;
+}
+
+/* ── ABOUT ── */
+.about {
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .about-grid { grid-template-columns: 1fr; gap: 3rem; }
+}
+
+.about-visual {
+  position: relative;
+  height: 420px;
+}
+
+.about-box {
+  position: absolute;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.about-box-main {
+  inset: 0;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+
+.about-box-main::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 60% at 50% 50%, rgba(14,165,233,0.06) 0%, transparent 70%);
+}
+
+.about-logo-large {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  font-style: italic;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  line-height: 1;
+  z-index: 1;
+}
+
+.about-tag {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+  z-index: 1;
+}
+
+.about-corner {
+  width: 120px; height: 120px;
+  background: var(--panel);
+  border: 1px solid var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-corner-tl {
+  top: -20px; left: -20px;
+}
+
+.about-corner-br {
+  bottom: -20px; right: -20px;
+}
+
+.corner-icon {
+  font-size: 2.2rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.9;
+  margin-bottom: 1.2rem;
+}
+
+.about-text p strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.about-pillars {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.pillar {
+  padding: 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  transition: border-color 0.2s;
+}
+
+.pillar:hover { border-color: var(--accent); }
+
+.pillar-icon { font-size: 1.3rem; margin-bottom: 0.4rem; }
+
+.pillar h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.pillar p {
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.5;
+  margin: 0 !important;
+}
+
+/* ── SERVICES ── */
+.services {
+  background: var(--void);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.service-card {
+  background: var(--deep);
+  padding: 2.5rem 2rem;
+  transition: background 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: var(--gradient);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease;
+}
+
+.service-card:hover { background: var(--surface); }
+.service-card:hover::before { transform: scaleX(1); }
+
+.service-top {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.service-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--border);
+  line-height: 1;
+  margin-bottom: 1.2rem;
+  transition: color 0.3s;
+}
+
+.service-card:hover .service-num { color: var(--dim); }
+
+.service-icon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.service-card h3 {
+  font-family: 'Syne', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.8rem;
+  letter-spacing: 0.02em;
+}
+
+.service-card p {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.service-tag {
+  display: inline-block;
+  margin-top: 1.2rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.62rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid rgba(14,165,233,0.3);
+  padding: 0.25em 0.7em;
+  border-radius: 2px;
+}
+
+/* ── WHY CHOOSE US ── */
+.why {
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.why-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.why-left {
+  position: sticky;
+  top: 8rem;
+}
+
+@media (max-width: 900px) {
+  .why-layout { grid-template-columns: 1fr; gap: 3rem; }
+  .why-left { position: static; }
+}
+
+.why-quote {
+  margin-top: 2.5rem;
+  padding: 1.8rem;
+  background: var(--surface);
+  border-left: 2px solid var(--gold);
+  border-radius: 0 4px 4px 0;
+}
+
+.why-quote p {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-style: italic;
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.why-quote cite {
+  display: block;
+  margin-top: 0.8rem;
+  font-family: 'Syne', sans-serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--gold);
+  font-style: normal;
+}
+
+.why-items {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.why-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border);
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  transition: all 0.2s;
+}
+
+.why-item:first-child { border-top: 1px solid var(--border); }
+.why-item:hover { padding-left: 0.5rem; }
+
+.why-item-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dim);
+  line-height: 1;
+  padding-top: 0.1rem;
+}
+
+.why-item h4 {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.why-item p {
+  font-size: 0.88rem;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+/* ── CONTACT ── */
+.contact {
+  background: var(--void);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact::before {
+  content: '';
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; height: 800px;
+  background: radial-gradient(circle, rgba(14,165,233,0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.contact-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-inner .section-eyebrow { justify-content: center; }
+
+.contact-inner h2 {
+  text-align: center;
+}
+
+.contact-inner .section-desc {
+  margin: 1.2rem auto 0;
+  text-align: center;
+}
+
+.contact-form {
+  margin-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  text-align: left;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+@media (max-width: 600px) {
+  .form-row { grid-template-columns: 1fr; }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 0.85em 1.1em;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.9rem;
+  color: var(--text);
+  outline: none;
+  transition: border-color 0.2s;
+  width: 100%;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--accent);
+}
+
+.form-group select option { background: var(--surface); }
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-submit {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.btn-submit {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--void);
+  background: var(--gradient);
+  padding: 1em 3em;
+  border: none;
+  border-radius: 2px;
+  cursor: none;
+  transition: all 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-submit:hover { transform: translateY(-2px); box-shadow: 0 10px 40px rgba(14,165,233,0.3); }
+
+/* ── FOOTER ── */
+footer {
+  background: var(--deep);
+  border-top: 1px solid var(--border);
+  padding: 3rem 6vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.footer-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: italic;
+  background: var(--gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.footer-links a {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover { color: var(--accent); }
+
+.light-mode {
+  --void: #ffffff;
+  --deep: #f5f5f5;
+  --surface: #eeeeee;
+  --panel: #e0e0e0;
+  --border: #cccccc;
+  --text: #0d0d0d;
+  --muted: #555555;
+  --dim: #888888;
+}
+
+.light-mode .cursor {
+  background: #0d0d0d;
+  mix-blend-mode: normal;
+}
+
+.light-mode .cursor-ring {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+.light-mode nav {
+  background: rgba(255, 255, 255, 0.92);
+  border-bottom-color: #cccccc;
+}
+
+.light-mode .nav-links a {
+  color: #333333;
+}
+
+.light-mode .nav-links a:hover {
+  color: var(--accent);
+}
+
+.light-mode .nav-logo-text {
+  color: #0B1B3F;
+}
+
+.light-mode .footer-logo {
+  color: #0B1B3F;
+}
+
+.light-mode .nav-cta {
+  color: #ffffff;
+}
+.toggle-switch {
+  margin-left: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-track {
+  width: 56px;
+  height: 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 6px;
+  transition: background 0.3s, border-color 0.3s;
+}
+
+.toggle-track:hover {
+  border-color: var(--accent);
+}
+
+.toggle-icon {
+  font-size: 0.7rem;
+  line-height: 1;
+  z-index: 1;
+}
+
+.toggle-thumb {
+  position: absolute;
+  left: 3px;
+  width: 22px;
+  height: 22px;
+  background: var(--accent);
+  border-radius: 50%;
+  transition: transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+.light-mode .toggle-thumb {
+  transform: translateX(28px);
+  background: var(--gold);
+}
+
+.light-mode .toggle-track {
+  background: #e8f4fd;
+  border-color: var(--accent);
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.footer-contact {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1.4rem;
+  justify-content: center;
+  margin-top: 0.7rem;
+}
+
+.footer-copy {
+  font-size: 0.78rem;
+  color: var(--dim);
+  font-family: 'Syne', sans-serif;
+  letter-spacing: 0.08em;
+}
+
+/* ── WHATSAPP FLOATING BUTTON ── */
+.whatsapp-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.whatsapp-fab:hover { transform: scale(1.1); }
+
+@media (max-width: 600px) {
+  .whatsapp-fab { width: 54px; height: 54px; bottom: 18px; right: 18px; }
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+</style>
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a class="nav-logo" href="#">
+    <img src="images/logo-camel-white.svg" alt="Zoon Technologies" class="logo-dark-img"/>
+    <img src="images/logo-camel.svg" alt="Zoon Technologies" class="logo-light-img"/>
+    <span class="nav-logo-dot"></span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Get Started</a>
+<div class="toggle-switch" onclick="toggleTheme()" title="Toggle theme">
+  <div class="toggle-track">
+    <span class="toggle-icon moon">🌙</span>
+    <span class="toggle-icon sun">☀️</span>
+    <div class="toggle-thumb"></div>
+  </div>
+</div></nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span>Engineering · Intelligence · Delivery</span>
+    </div>
+
+    <h1>
+      We Build What<br>
+      <span class="line2">Others Imagine.</span>
+    </h1>
+
+    <p class="hero-sub">Zoon Technologies delivers precision-engineered solutions in project management, software development, AI automation, and engineering consultation — for organisations that refuse to settle.</p>
+
+    <div class="hero-actions">
+      <a href="#services" class="btn-primary">Explore Services</a>
+      <a href="#contact" class="btn-outline">Start a Project</a>
+    </div>
+  </div>
+
+  <div class="hero-stats">
+    <div class="stat-item">
+      <div class="stat-num">5+</div>
+      <div class="stat-label">Core Disciplines</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">360°</div>
+      <div class="stat-label">Tech Coverage</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-num">∞</div>
+      <div class="stat-label">Scale Potential</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+    <span class="scroll-text">Scroll</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section about reveal" id="about">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-box about-box-main">
+        <div class="about-logo-large">Zoon</div>
+        <div class="about-tag">Technologies · Est. 2024</div>
+      </div>
+      <div class="about-box about-box-corner about-corner-tl">
+        <span class="corner-icon">⚙️</span>
+      </div>
+      <div class="about-box about-box-corner about-corner-br">
+        <span class="corner-icon">🤖</span>
+      </div>
+    </div>
+
+    <div class="about-text">
+      <div class="section-header">
+        <div class="section-eyebrow">
+          <div class="section-eyebrow-line"></div>
+          <span>About Zoon</span>
+        </div>
+        <h2>A new standard in <em>technology delivery</em></h2>
+      </div>
+
+      <p>Zoon Technologies was founded on a singular belief: that <strong>great technology should be accessible to every organisation</strong> — from ambitious startups to established enterprises and government institutions.</p>
+
+      <p>We don't just consult. We <strong>engineer, build, and deliver</strong>. Our multidisciplinary team bridges the gap between vision and execution with precision, transparency, and relentless commitment to quality.</p>
+
+      <div class="about-pillars">
+        <div class="pillar">
+          <div class="pillar-icon">🎯</div>
+          <h4>Precision</h4>
+          <p>Every deliverable is engineered to specification, on time.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🔒</div>
+          <h4>Trust</h4>
+          <p>Transparent process, honest timelines, accountable teams.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">⚡</div>
+          <h4>Speed</h4>
+          <p>AI-augmented workflows that compress delivery cycles.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">🌍</div>
+          <h4>Scale</h4>
+          <p>Solutions designed to grow with your organisation.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section services reveal" id="services">
+  <div class="section-header">
+    <div class="section-eyebrow">
+      <div class="section-eyebrow-line"></div>
+      <span>What We Do</span>
+    </div>
+    <h2>Five disciplines. <em>One team.</em></h2>
+    <p class="section-desc">End-to-end capability across the full technology lifecycle — so you never need to coordinate between multiple vendors again.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-num">01</div>
+        <div class="service-icon">📋</div>
+      </div>
+      <h3>Project Management</h3>
+      <p>Structured delivery frameworks, risk mitigation, stakeholder alignment, and milestone accountability — keeping every project on track from kickoff to closure.</p>
+      <span class="service-tag">PMO · Agile · Waterfall</span>
+    </div>
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-num">02</div>
+        <div class="service-icon">💻</div>
+      </div>
+      <h3>Software Development</h3>
+      <p>Custom web, mobile, and enterprise applications built with modern stacks — architected for performance, security, and long-term maintainability.</p>
+      <span class="service-tag">Web · Mobile · Enterprise</span>
+    </div>
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-num">03</div>
+        <div class="service-icon">🏗️</div>
+      </div>
+      <h3>Engineering Consulting</h3>
+      <p>Technical advisory, systems architecture, infrastructure planning, and engineering audits that bring clarity and direction to your most complex challenges.</p>
+      <span class="service-tag">Architecture · Audit · Strategy</span>
+    </div>
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-num">04</div>
+        <div class="service-icon">🤖</div>
+      </div>
+      <h3>AI Automation</h3>
+      <p>Intelligent automation solutions that eliminate repetitive work, accelerate decision-making, and embed AI into your core operations at enterprise scale.</p>
+      <span class="service-tag">LLM · Workflow · Integration</span>
+    </div>
+    <div class="service-card">
+      <div class="service-top">
+        <div class="service-num">05</div>
+        <div class="service-icon">🔭</div>
+      </div>
+      <h3>Full Development Consultation</h3>
+      <p>From concept to launch — we consult across the entire development lifecycle, ensuring every technology decision aligns with your business objectives.</p>
+      <span class="service-tag">Strategy · Roadmap · Delivery</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY CHOOSE US -->
+<section class="section why reveal" id="why">
+  <div class="why-layout">
+    <div class="why-left">
+      <div class="section-eyebrow">
+        <div class="section-eyebrow-line"></div>
+        <span>Why Zoon</span>
+      </div>
+      <h2>Built for those who <em>demand more</em></h2>
+
+      <div class="why-quote">
+        <p>"The difference between good and exceptional is not talent — it is precision, discipline, and the refusal to cut corners."</p>
+        <cite>— The Zoon Standard</cite>
+      </div>
+    </div>
+
+    <div class="why-items">
+      <div class="why-item">
+        <div class="why-item-num">01</div>
+        <div>
+          <h4>Multidisciplinary Under One Roof</h4>
+          <p>Project management, software, engineering, AI — all delivered by a single cohesive team. No handoff gaps. No vendor blame games. One point of accountability.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">02</div>
+        <div>
+          <h4>AI-Augmented Delivery</h4>
+          <p>We use AI tools internally to deliver faster, catch issues earlier, and produce higher quality output — passing that efficiency advantage directly to your project.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">03</div>
+        <div>
+          <h4>Proven Across Client Types</h4>
+          <p>From solo founders to government bodies — our processes adapt to your scale, your compliance requirements, and your organisational culture.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">04</div>
+        <div>
+          <h4>Radical Transparency</h4>
+          <p>You always know where your project stands. Regular reporting, open communication, and honest conversations — even when the news is hard.</p>
+        </div>
+      </div>
+      <div class="why-item">
+        <div class="why-item-num">05</div>
+        <div>
+          <h4>Long-Term Partnership Mindset</h4>
+          <p>We don't optimise for the invoice. We optimise for your outcome. Our clients return because we treat every engagement as a long-term relationship, not a transaction.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section contact reveal" id="contact">
+  <div class="contact-inner">
+    <div class="section-eyebrow">
+      <div class="section-eyebrow-line"></div>
+      <span>Get In Touch</span>
+    </div>
+    <h2>Ready to build <em>something remarkable?</em></h2>
+    <p class="section-desc">Tell us about your project. We'll respond within 24 hours with a clear path forward.</p>
+
+    <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+  <input type="hidden" name="form-name" value="contact"/>
+  <p style="display:none"><label>Don't fill this out: <input name="bot-field"/></label></p>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="John Adeyemi" required/>
+        </div>
+        <div class="form-group">
+          <label>Organisation</label>
+          <input type="text" name="organisation" placeholder="Company or Government Body"/>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="john@organisation.com" required/>
+        </div>
+        <div class="form-group">
+          <label>Phone Number</label>
+          <input type="tel" name="phone" placeholder="0803 000 0000"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Service Required</label>
+        <select name="service">
+          <option value="">Select a service...</option>
+          <option>Website Design &amp; Development</option>
+          <option>Project Management</option>
+          <option>Software Development</option>
+          <option>Engineering Consulting</option>
+          <option>AI Automation</option>
+          <option>Full Development Consultation</option>
+          <option>Multiple Services</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Tell Us About Your Project</label>
+        <textarea name="message" placeholder="Describe your challenge, goal, or idea. The more detail, the better we can help you..." rows="5"></textarea>
+      </div>
+      <div class="form-submit">
+        <button class="btn-submit">Send Enquiry →</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Zoon Technologies</div>
+  <ul class="footer-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#why">Why Us</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="footer-contact">
+  <div>Warri, Delta State, Nigeria ▪ Serving Clients Worldwide </div>
+  <div class="footer-icons">
+    <a href="mailto:hello@zoontech.net" aria-label="Email Zoon Technologies"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="1.5" y="4" width="21" height="16" rx="2.5" fill="#fff" stroke="#8a97ad" stroke-width="1.2"/><path d="m2.5 6.5 9.5 7 9.5-7" fill="none" stroke="#0ea5e9" stroke-width="1.6" stroke-linejoin="round"/></svg></a>
+    <a href="https://wa.me/2349012670989?text=Hello%20Zoon%20Technologies%2C%20I%27m%20interested%20in%20your%20services." target="_blank" rel="noopener" aria-label="Chat with Zoon Technologies on WhatsApp"><svg viewBox="0 0 32 32" width="22" height="22" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#25D366"/><path fill="#fff" d="M16 6.5c-5.2 0-9.5 4.2-9.5 9.5 0 1.7.4 3.3 1.2 4.7l-1.3 4.8 4.9-1.3c1.4.8 3 1.2 4.7 1.2 5.2 0 9.5-4.2 9.5-9.5S21.2 6.5 16 6.5zm0 17.3c-1.5 0-2.9-.4-4.1-1.1l-.3-.2-3 .8.8-2.9-.2-.3c-.8-1.2-1.2-2.7-1.2-4.1 0-4.4 3.6-7.9 7.9-7.9s7.9 3.6 7.9 7.9-3.5 7.8-7.8 7.8zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.7.9-.1.2-.3.2-.5.1-.2-.1-1-.4-1.9-1.2-.7-.6-1.2-1.4-1.3-1.6-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.2.3-.4.1-.2 0-.3 0-.4-.1-.1-.6-1.3-.8-1.8-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.6.3-.2.2-.8.8-.8 1.8s.8 2.1.9 2.2c.1.2 1.6 2.4 3.8 3.3.5.2.9.4 1.2.5.5.2 1 .1 1.4.1.4-.1 1.4-.5 1.5-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.4-.3z"/></svg></a>
+  </div>
+</div>
+<div class="footer-copy">© 2026 Zoon Technologies. All rights reserved.</div>
+</footer>
+
+<!-- WHATSAPP FLOATING BUTTON -->
+<a href="https://wa.me/2349012670989?text=Hello%20Zoon%20Technologies%2C%20I%20saw%20your%20website%20and%20I%27m%20interested%20in%20a%20website%20for%20my%20business."
+   class="whatsapp-fab" target="_blank" rel="noopener" aria-label="Chat with Zoon Technologies on WhatsApp">
+  <svg viewBox="0 0 32 32" width="34" height="34" fill="#fff" aria-hidden="true">
+    <path d="M16 .5C7.4.5.5 7.4.5 16c0 2.8.7 5.4 2 7.7L.5 31.5l8-2.1c2.2 1.2 4.8 1.9 7.5 1.9 8.6 0 15.5-6.9 15.5-15.5S24.6.5 16 .5zm0 28.2c-2.4 0-4.7-.6-6.7-1.8l-.5-.3-4.8 1.3 1.3-4.6-.3-.5c-1.3-2-2-4.4-2-6.9C2.3 8.4 8.4 2.3 16 2.3S29.7 8.4 29.7 16 23.6 28.7 16 28.7zm8.4-9.9c-.5-.2-2.7-1.3-3.1-1.5-.4-.2-.7-.2-1 .2-.3.5-1.1 1.5-1.4 1.7-.3.2-.5.3-1 .1-.5-.2-2-.7-3.8-2.3-1.4-1.2-2.3-2.8-2.6-3.3-.3-.5 0-.7.2-1 .2-.2.5-.5.7-.8.2-.3.3-.5.5-.8.2-.3.1-.6 0-.8-.1-.2-1-2.4-1.4-3.3-.4-.9-.7-.7-1-.8h-.8c-.3 0-.7.1-1.1.5-.4.4-1.5 1.4-1.5 3.5s1.5 4.1 1.7 4.3c.2.3 3 4.6 7.3 6.4 1 .4 1.8.7 2.5.9 1 .3 2 .3 2.7.2.8-.1 2.7-1.1 3-2.1.4-1 .4-1.9.3-2.1-.1-.2-.4-.3-.9-.5z"/>
+  </svg>
+</a>
+
+<script>
+  // Theme toggle
+function toggleTheme() {
+  document.body.classList.toggle('light-mode');
+}
+// Custom cursor
+const cursor = document.getElementById('cursor');
+const ring = document.getElementById('cursorRing');
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+document.addEventListener('mousemove', e => {
+  mx = e.clientX; my = e.clientY;
+  cursor.style.left = mx + 'px';
+  cursor.style.top = my + 'px';
+});
+
+function animateRing() {
+  rx += (mx - rx) * 0.12;
+  ry += (my - ry) * 0.12;
+  ring.style.left = rx + 'px';
+  ring.style.top = ry + 'px';
+  requestAnimationFrame(animateRing);
+}
+animateRing();
+
+document.querySelectorAll('a, button, .service-card, .pillar, .why-item').forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    ring.style.width = '55px';
+    ring.style.height = '55px';
+    ring.style.borderColor = 'rgba(200,169,110,0.6)';
+  });
+  el.addEventListener('mouseleave', () => {
+    ring.style.width = '36px';
+    ring.style.height = '36px';
+    ring.style.borderColor = 'rgba(14,165,233,0.4)';
+  });
+});
+
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  });
+}, { threshold: 0.08 });
+reveals.forEach(r => observer.observe(r));
+
+// Nav scroll effect
+window.addEventListener('scroll', () => {
+  const nav = document.getElementById('navbar');
+  if (window.scrollY > 60) {
+    nav.style.borderBottomColor = 'rgba(30,47,80,0.8)';
+  } else {
+    nav.style.borderBottomColor = 'rgba(30,47,80,0.5)';
+  }
+});
+</script>
+</body>
+</html>

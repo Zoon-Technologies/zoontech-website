@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 370 120">
+  <g transform="translate(8,10)">
+    <polygon points="18,18 82,18 82,28 43,72 82,72 82,82 18,82 18,72 57,28 18,28" fill="#FFFFFF"/>
+    <polyline points="2,50 36,50 41,50 46,33 53,67 58,50 98,50" fill="none" stroke="#16C784" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g stroke="#FFFFFF" stroke-width="11" fill="none" stroke-linejoin="miter">
+    <path d="M132,32 H176 L132,80 H176"/>
+    <ellipse cx="216" cy="56" rx="22" ry="28"/>
+    <ellipse cx="278" cy="56" rx="22" ry="28"/>
+    <path d="M318,84 V28 L358,84 V28"/>
+  </g>
+  <text x="132" y="106" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" letter-spacing="6.2" fill="#9FB0CC">TECHNOLOGIES</text>
+</svg>
